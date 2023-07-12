@@ -38,6 +38,9 @@ a, button {
 }
 
 .navbar {
+    /* z-index: 1; 
+    top: 0;
+    position: sticky; */
     height: 90px;
     display: flex;
     align-items: center;
@@ -51,6 +54,11 @@ a, button {
     /* background-color: black; */
     width: 100%;
     background-color: rgba(19, 22, 27, 1);
+}
+
+.navbar img{
+  position: relative;
+  left: 200px;
 }
 
 .hamburger_menu ul {
@@ -68,6 +76,8 @@ a, button {
 }
 
 .lis-item {
+    position: relative;
+    right: 130px;
     font-family: Noto Sans, sans-serif;
     font-weight: 600;
     font-size: 1.10rem;
@@ -155,8 +165,10 @@ a, button {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
+    background: transparent;
 }
 .section {
+  
     margin: 0 auto;
     padding-block: 5rem;
     display: flex;
@@ -176,9 +188,9 @@ a, button {
     font-weight: 800;
     padding: 1rem;
     width: 3rem;
-    height: 1rem;
+    height: 0.5rem;
     opacity: 0.75;
-    border-radius: 50%;
+    border-radius: 60%;
     color: var(--white-100);
     background: var(--black-300);
 }
@@ -212,8 +224,9 @@ footer{
     align-items: center;
     justify-content: space-evenly;
     /* border: 2px solid red; */
-    height: 265px;
+    height: auto;
     /* background-color: black; */
+    margin-top: 30%;
     color: white;
     flex-wrap: wrap;
     width: 100%;
@@ -224,7 +237,7 @@ footer{
     /* border: 2px solid red; */
     display: flex;
     width: 100%;
-    height: auto;
+    height: 248px;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
@@ -251,7 +264,7 @@ footer{
     display: flex;
     gap: 20px;
     width: 50%;
-    height: 50%;
+    height: 55%;
  }
 
  .footer-img i:hover{
@@ -289,5 +302,15 @@ footer{
     cursor: pointer;
  }
  
+.footer-last{
+    margin-right: 10px;
+    font-family: Inter,sans-serif;
+    font-weight: 500;
+}
+
+ .footer-last i{
+  color: red;
+  padding: 5px;
+ }
  
  
